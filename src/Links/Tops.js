@@ -1,12 +1,12 @@
 import React from 'react'
-import { NavLinks } from './Components/NavLinks'
-import { Navbar } from "./Components/Navbar";
+import NavLinks from '../Components/NavLinks'
+import NavBar  from "../Components/NavBar";
 
 
 const Tops = () => {
   return (
     <div>
-      <Navbar />
+      <NavBar />
       <NavLinks />
 
     </div>
