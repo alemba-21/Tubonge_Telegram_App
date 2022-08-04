@@ -1,17 +1,28 @@
-import { click } from '@testing-library/user-event/dist/click'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import { useState } from 'react';
+
+import {FaBars, FaTimes} from "react-icons/fa";
+
 const Navbar = () => {
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
+
+  const [color, setColor] = useState(false);
+  const changeColor = () => {
+    if(window.scrollY >=100){
+      setColor(true);
+    }else{
+      setColor(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeColor);
+
   return(
-    <div className='humberger'>
-      {/* profile icon
-          New Group
-          Contacts
-          Calls
-          Settings
-       */}
-       <ul className={click ? "NavLinks active" : "NavLinks"}>
+    <div className={color ? "header header-bg" : "header"}>
+      <ul className={click ? "NavLinks active" : "NavLinks"}>
         <li>
           <Link to="Avatar">Profile</Link>
         </li>
@@ -27,7 +38,10 @@ const Navbar = () => {
         <li>
           <Link to="Settings">Settings</Link>
         </li>
-       </ul>
+      </ul>
+      <div className='hamburger' onClick={handleClick}>
+        {click ? (<FaTimes size={20} style={{color:'white'}}/> ) : (<FaBars size={20} style={{color:'white'}}/>)}
+      </div>
     </div>
   )
 }

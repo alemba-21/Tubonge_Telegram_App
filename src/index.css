@@ -1,0 +1,25 @@
+body{
+    /* background-color: blue; */
+    
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: fixed;
+    /* width: 100%; */
+    /* height: 90px; */
+    /* z-index: 10; */
+}
+
+.header ul li{
+    display: inline-block;
+    padding: 20px;
+}
+
+
+.header ul li Link{
+    color: black;
+}

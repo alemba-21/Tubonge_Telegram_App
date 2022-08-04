@@ -2,7 +2,9 @@ import React from 'react'
 
 function NavLinks(){
   return (
-    <div>NavLinks</div>
+    <div>
+      
+    </div>
   )
 }
 
