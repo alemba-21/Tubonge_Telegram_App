@@ -4,6 +4,7 @@
 
 ## Screenshot
 
+![image](./src/Images/tubonge_design.png)
 
 ## Table of Content
 
@@ -43,7 +44,7 @@ This app contains, message/chatting section, calling button, dark-mode and light
 |:---------:|:-------:|:-------:|
 |Enter your name | Alemba Alex kiragu |    |
 |Enter your Email Address |alembakiragu@gmail.com |    |
-|Enter your name | (write your name here) |    |
+|Enter your name | (Newton Ombese) |    |
 |Enter your Email Address |(write your email here) |    |
 |Enter your name | (write your name here) |    |
 |Enter your Email Address |(write your email here) |    |
