@@ -1,6 +1,6 @@
 import React from 'react'
 
-const NavLinks = () => {
+function NavLinks(){
   return (
     <div>NavLinks</div>
   )
