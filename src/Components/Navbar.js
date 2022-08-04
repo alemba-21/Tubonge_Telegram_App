@@ -1,8 +1,10 @@
 import React from 'react'
 
-const Navbar = () => {
-  return (
-    <div>Navbar</div>
+function Navbar(){
+  return(
+    <div>
+    
+    </div>
   )
 }
 
